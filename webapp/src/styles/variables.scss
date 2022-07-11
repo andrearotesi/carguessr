@@ -1,0 +1,52 @@
+@import 'environment';
+
+/**
+ * Variabili Derivate/Calcolate da Environment
+ *********************************************/
+:root {
+  /**
+ * Testi - Dimensioni (https://type-scale.com/)
+ *********************************************/
+  --text-base:       #{$text-base};
+  --text-scale:      #{$text-scale};
+
+  --text-size-micro:       calc(var(--text-base) / var(--text-scale) / var(--text-scale) / var(--text-scale));
+  --text-size-tiny:        calc(var(--text-base) / var(--text-scale) / var(--text-scale));
+  --text-size-small:       calc(var(--text-base) / var(--text-scale));
+  --text-size-regular:     var(--text-base);
+  --text-size-increased:   calc(var(--text-base) * var(--text-scale));
+  --text-size-large:       calc(var(--text-base) * var(--text-scale) * var(--text-scale));
+  --text-size-huge:        calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale));
+  --text-size-giant:       calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
+  --text-size-jumbo:       calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
+
+  /**
+ * Colori (Aggiungere eventuali lighten/darken)
+ *********************************************/
+  --color-flax:            #{$color-flax};
+  --color-teal:            #{$color-teal};
+  --color-oxford:          #{$color-oxford};
+  --color-emerald:         #{$color-emerald};
+  --color-ruby:            #{$color-ruby};
+
+  /**
+ * Colori - Testi
+ *********************************************/
+  --text-color-white:      #{$color-white};
+  --text-color-black:      #{$color-black};
+  --text-color-link:       #{$color-flax};
+  --text-color-success:    #{$color-emerald};
+  --text-color-error:      #{$color-ruby};
+
+  /**
+   * Colori - Bottoni
+   *********************************************/
+  --button-default:        #{$color-teal};
+  --button-success:        #{$color-emerald};
+  --button-cancel:         #{$color-ruby};
+
+  /**
+   * Sfondo
+   *********************************************/
+  --body-backgroud-color:  #{$color-oxford};
+}

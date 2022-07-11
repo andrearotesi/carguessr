@@ -1,0 +1,61 @@
+@use '~@angular/material' as mat;
+@import 'variables';
+
+/*
+* Material custom typography
+******************************/
+$cgsr-typography: mat.define-typography-config(
+  $font-family: 'Montserrat'
+);
+@include mat.core($cgsr-typography);
+@include mat.all-component-typographies($cgsr-typography);
+
+/*
+* Default palette
+******************************/
+$cpn-palette: (
+  50 : #fef5e7,
+  100 : #fdeace,
+  200 : #fce0b6,
+  300 : #f9cb85,
+  400 : #f8c06d,
+  500 : #000000,
+  600 : #f4a121,
+  700 : #f4970b,
+  800 : #db880a,
+  900 : #c37909,
+  A100 : #fce0b6,
+  A200 : #f8c06d,
+  A400 : #f6ac3c,
+  A700 : #f4a121,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$cpn-primary-palette: mat.define-palette($cpn-palette);
+$cpn-accent-palette:  mat.define-palette($cpn-palette, 600, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$cpn-warn-palette: mat.define-palette(mat.$red-palette);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$cpn-theme: mat.define-light-theme($cpn-primary-palette, $cpn-accent-palette, $cpn-warn-palette);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($cpn-theme);

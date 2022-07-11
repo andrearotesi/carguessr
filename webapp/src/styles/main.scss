@@ -1,0 +1,10 @@
+@import 'typography';
+@import 'variables';
+
+html, body {
+    height: 100%;
+    margin: 0 2em 0 2em;
+    font-family: Montserrat, sans-serif;
+    color: var(--text-color-white);
+    background-color: var(--body-backgroud-color);
+}
