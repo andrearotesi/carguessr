@@ -19,6 +19,8 @@
   --text-size-huge:        calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale));
   --text-size-giant:       calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
   --text-size-jumbo:       calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
+  --text-size-enormous:    calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
+  --text-size-immense:    calc(var(--text-base) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale) * var(--text-scale));
 
   /**
  * Colori (Aggiungere eventuali lighten/darken)
@@ -26,6 +28,7 @@
   --color-flax:            #{$color-flax};
   --color-teal:            #{$color-teal};
   --color-oxford:          #{$color-oxford};
+  --color-ocean:           #{$color-ocean};
   --color-emerald:         #{$color-emerald};
   --color-ruby:            #{$color-ruby};
 

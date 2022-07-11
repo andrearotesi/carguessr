@@ -1,29 +1,42 @@
-<h1>Typography</h1>
-<hr>
-<h3>Text sizes</h3>
-<span style="font-size: var(--text-size-micro)">Micro</span><br>
-<span style="font-size: var(--text-size-tiny)">Tiny</span><br>
-<span style="font-size: var(--text-size-small)">Small</span><br>
-<span>Regular</span><br>
-<span style="font-size: var(--text-size-increased)">Increased</span><br>
-<span style="font-size: var(--text-size-large)">Large</span><br>
-<span style="font-size: var(--text-size-huge)">Huge</span><br>
-<span style="font-size: var(--text-size-giant)">Giant</span><br>
-<span style="font-size: var(--text-size-jumbo)">Jumbo</span><br>
+<mat-card>
+    <mat-card-title><h1>Colors</h1></mat-card-title>
+    <mat-card-subtitle><h3>Carguessr's custom palette</h3></mat-card-subtitle>
+    <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="5px">
+            <span class="card oxford">Oxford</span>
+            <span class="card ocean">Ocean</span>
+            <span class="card teal">Teal</span>
+            <span class="card emerald">Emerald</span>
+            <span class="card ruby">Ruby</span>
+            <span class="card flax">Flax</span>
+        </div>
+    </mat-card-content>
+</mat-card>
 <br>
-
-<h3>Text styles</h3>
-<span style="font-style: italic">Italic</span>
-<span style="font-weight: 700">Semi-bold</span>
-<span style="font-weight: 900">Bold af</span>
-<hr>
-
-<h1>Colors</h1>
-<hr>
-<div class="card oxford">Oxford</div>
-<div class="card teal">Teal</div>
-<div class="card emerald">Emerald</div>
-<div class="card ruby">Ruby</div>
-<div class="card flax">Flax</div>
-
-
+<mat-card>
+    <mat-card-title><h1>Typography</h1></mat-card-title>
+    <mat-card-subtitle><h3>All text variants</h3></mat-card-subtitle>
+    <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="space-around start">
+            <h3>Text sizes</h3>
+            <span style="font-size: var(--text-size-micro)">Micro</span><br>
+            <span style="font-size: var(--text-size-tiny)">Tiny</span><br>
+            <span style="font-size: var(--text-size-small)">Small</span><br>
+            <span>Regular</span><br>
+            <span style="font-size: var(--text-size-increased)">Increased</span><br>
+            <span style="font-size: var(--text-size-large)">Large</span><br>
+            <span style="font-size: var(--text-size-huge)">Huge</span><br>
+            <span style="font-size: var(--text-size-giant)">Giant</span><br>
+            <span style="font-size: var(--text-size-jumbo)">Jumbo</span><br>
+            <span style="font-size: var(--text-size-enormous)">Enormous</span><br>
+            <span style="font-size: var(--text-size-immense)">Immense</span><br>
+        </div>
+        
+        <div class="wrapper" fxLayout="column" fxLayoutAlign="space-around start">
+            <h3>Text styles</h3>
+            <span style="font-style: italic">Italic</span><br>
+            <span style="font-weight: 700">Bold</span><br>
+            <span style="font-weight: 900; font-style: italic">Bold Italic</span>
+        </div>
+    </mat-card-content>
+</mat-card>

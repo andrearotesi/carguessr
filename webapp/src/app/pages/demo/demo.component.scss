@@ -1,11 +1,18 @@
+mat-card {
+    background-color: var(--color-ocean);
+}
+
 h1 {
-    color: var(--color-teal)
+    color: var(--color-flax);
 }
 
 h3 {
-    color: var(--color-flax)
+    font-weight: 500;
 }
 
+.wrapper {
+    margin: 2em 0 2em 0;
+}
 .card {
     padding: 2em;
     border: 5px solid #FFFFFF;
@@ -25,4 +32,7 @@ h3 {
 }
 .oxford {
     background-color: var(--color-oxford);
+}
+.ocean {
+    background-color: var(--color-ocean);
 }
